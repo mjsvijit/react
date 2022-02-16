@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+ color:red;
+  
+}
+.App1 {
+  text-align: center;
+ color:blue;
+  
+}
+
+.Fragment{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
