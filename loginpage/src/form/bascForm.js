@@ -4,13 +4,14 @@ export const BascForm = () => {
    const [email, setEmail] = useState("");
    const [password, setPassword] = useState("")
    const [allEntry, setAllEntry] = useState([])
-   const submitForm =()=>{
+   const submitForm =(e)=>{
+        e.preventDefault();
         const newEntry={email:email, password:password};
         setAllEntry([...allEntry, newEntry]);
    }
   return (
       <>
-      <form action="">
+      <form action="" onSubmit={submitForm}>
     <div>
   
     <label htmlFor='email' >Email</label>
@@ -29,7 +30,7 @@ export const BascForm = () => {
     
 
     </div>
-    <button type="submit" >Login</button>
+    <button type="submitForm" >Login</button>
    </form>
 
    <div>
@@ -48,3 +49,4 @@ export const BascForm = () => {
     </>
   )
 }
+
